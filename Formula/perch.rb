@@ -10,16 +10,16 @@ class Perch < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/StevenSSparks/perch/releases/download/v0.1.0/perch_0.1.0_darwin_amd64.tar.gz"
-      sha256 "2279a6e7eb9c5e321d1521c551dc48ad1295f83ab16810516678307c5d03cf3a"
+      url "https://github.com/StevenSSparks/homebrew-tap/releases/download/v0.1.0/perch_0.1.0_darwin_amd64.tar.gz"
+      sha256 "f723e12ff2de150644c3c4267189db0ab7fca3e4568502785f066030e9240171"
 
       define_method(:install) do
         bin.install "perch"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/StevenSSparks/perch/releases/download/v0.1.0/perch_0.1.0_darwin_arm64.tar.gz"
-      sha256 "f01d607040bfa436c69f096ed66ed9643f3203751c6a99507e9a182994b66cf4"
+      url "https://github.com/StevenSSparks/homebrew-tap/releases/download/v0.1.0/perch_0.1.0_darwin_arm64.tar.gz"
+      sha256 "6b6268d62c589e20f0c73793d5b226898340550d3f5aa8029a00e297aa6b46d7"
 
       define_method(:install) do
         bin.install "perch"
@@ -29,15 +29,15 @@ class Perch < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/StevenSSparks/perch/releases/download/v0.1.0/perch_0.1.0_linux_amd64.tar.gz"
-      sha256 "a1fa5026fa3a21ea63bc0d35e436126c3bc32559be24abdf23333c7f827d8cf6"
+      url "https://github.com/StevenSSparks/homebrew-tap/releases/download/v0.1.0/perch_0.1.0_linux_amd64.tar.gz"
+      sha256 "2c816316561289a79e57e5de981108121aba2714dbc9e4b234b659622aa039e7"
       define_method(:install) do
         bin.install "perch"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/StevenSSparks/perch/releases/download/v0.1.0/perch_0.1.0_linux_arm64.tar.gz"
-      sha256 "f624bbc7d7f067189aee6a0488dc4ecbb90b252731aa2f4dad75ea2d03ae5abc"
+      url "https://github.com/StevenSSparks/homebrew-tap/releases/download/v0.1.0/perch_0.1.0_linux_arm64.tar.gz"
+      sha256 "963a57e90368b47d17633623e55af1311c883cd0a99d2e2bd910d36ee19e0f7b"
       define_method(:install) do
         bin.install "perch"
       end
