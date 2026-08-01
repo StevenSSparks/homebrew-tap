@@ -18,7 +18,7 @@ cask "perch" do
   desc "Meshtastic command center — native dashboard + bundled capture engine"
   homepage "https://github.com/StevenSSparks/perch"
 
-  depends_on macos: ">= :big_sur"
+  depends_on macos: ":big_sur"
 
   app "Perch.app"
 
