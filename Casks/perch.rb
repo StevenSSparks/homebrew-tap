@@ -10,8 +10,8 @@
 # The url points at the signed + notarized Perch.app produced by
 # packaging/build-app.sh (NOTARIZE=1) and uploaded to the release.
 cask "perch" do
-  version "0.1.1"
-  sha256 "522eab86a05320697f0ecf221c0f92d53d33183eeae608ec83cd14a28430cfbf"
+  version "0.1.6"
+  sha256 "528485a05b4eff83b3905a803794a35737f97e8bb6c640048df25f7192853b61"
 
   url "https://github.com/StevenSSparks/homebrew-tap/releases/download/v#{version}/Perch-#{version}-macos.zip"
   name "Perch"
