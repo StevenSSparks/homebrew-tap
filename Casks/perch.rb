@@ -1,6 +1,6 @@
 cask "perch" do
-  version "0.1.23"
-  sha256 "9d36b272932f11125a8790a73ddbeea01e588eb8b18ec67034ea96ce3626d8b3"
+  version "0.1.24"
+  sha256 "7aea64d9aebf7d6a063d11965e99894f96c9026edc5724ea3559c4a48e6ee5a2"
 
   url "https://github.com/StevenSSparks/perch-releases/releases/download/v#{version}/Perch-#{version}-macos.zip"
   name "Perch"
