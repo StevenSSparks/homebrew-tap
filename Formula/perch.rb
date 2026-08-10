@@ -5,13 +5,13 @@
 class Perch < Formula
   desc "Meshtastic command center — a fast dashboard for your LoRa mesh"
   homepage "https://github.com/StevenSSparks/perch"
-  version "0.1.22"
+  version "0.1.25"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/StevenSSparks/homebrew-tap/releases/download/v0.1.22/perch_0.1.22_darwin_amd64.tar.gz"
-      sha256 "7d6d187778fd3603314f79ea6794326c7caca363b40070ace89b4031f7895b00"
+      url "https://github.com/StevenSSparks/homebrew-tap/releases/download/v0.1.25/perch_0.1.25_darwin_amd64.tar.gz"
+      sha256 "278d662f35e98c461f6fbd5fabe03523b156fe22f86a7eecae183953be88db0a"
 
       define_method(:install) do
         bin.install "perch"
@@ -19,8 +19,8 @@ class Perch < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/StevenSSparks/homebrew-tap/releases/download/v0.1.22/perch_0.1.22_darwin_arm64.tar.gz"
-      sha256 "13987fd2b93fb1ea82802419c10df3ec38fba7c4bff617453eb7c4df4ec8fab8"
+      url "https://github.com/StevenSSparks/homebrew-tap/releases/download/v0.1.25/perch_0.1.25_darwin_arm64.tar.gz"
+      sha256 "bb514fbf58bce33d25a76bbedc78c2cc74ecb550e598b82335ff3ff5e9aeb13f"
 
       define_method(:install) do
         bin.install "perch"
@@ -31,16 +31,16 @@ class Perch < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/StevenSSparks/homebrew-tap/releases/download/v0.1.22/perch_0.1.22_linux_amd64.tar.gz"
-      sha256 "e614d2f4b3e63f7b766842e612f24bbba12a30e56fc4ea98b4cb7c9748cd9286"
+      url "https://github.com/StevenSSparks/homebrew-tap/releases/download/v0.1.25/perch_0.1.25_linux_amd64.tar.gz"
+      sha256 "8f9b4071b6ae8cf280866b44c2a97b4739cb83b6b33ec852dd4acc08dd01aa94"
       define_method(:install) do
         bin.install "perch"
         bin.install "coop" if File.exist?("coop") # present on Linux archives
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/StevenSSparks/homebrew-tap/releases/download/v0.1.22/perch_0.1.22_linux_arm64.tar.gz"
-      sha256 "fa1b75d698b111a5e1540994e575c471448983d20185d88231d0d5b0918ec443"
+      url "https://github.com/StevenSSparks/homebrew-tap/releases/download/v0.1.25/perch_0.1.25_linux_arm64.tar.gz"
+      sha256 "413759564ee261d9f4525dd8f297ac62ac5c5264afd5ede412227cfdab9fb68b"
       define_method(:install) do
         bin.install "perch"
         bin.install "coop" if File.exist?("coop") # present on Linux archives
